@@ -10,14 +10,17 @@
 <body>
 	<div class="workbench">
 		<div class="console">
-			<button name="eraser">Erase Canvas</button>
-			<button name="rainbow">Toggle Rainbow Mode</button>
-			<button name="shading">Shade</button>
-			<button name="lighten">Lighten</button>
+	        <input id="colorPicker" type="color" value="#333333" class="color-picker"/>
+			<button name="eraser" class="eraser">Eraser</button>
+			<button name="rainbow" class="rainbow">Rainbow Mode</button>
+			<button name="shading" class="shading">Shade</button>
+			<button name="lighten" class="lighten">Lighten</button>
+			<button name="reset" class="reset">Clear Canvas</button>
+
 		</div>
 		<div id="board"></div>
 		<div class="rangeslider">
-		  <input type="range" orient="vertical" min="1" max="100" value="10" class="myslider" id="sliderRange">
+		  <input type="range" orient="vertical" min="1" max="60" value="1" class="myslider" id="sliderRange">
 		</div>
 	</div>
 </body>
